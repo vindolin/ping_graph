@@ -12,12 +12,6 @@ import sys
 import platform
 from matplotlib import use as mpl_use
 
-
-mpl_use('Qt5Agg')  # Ensure we use a GUI backend
-# mpl_use('GTK3Agg')  # Ensure we use a GUI backend
-# mpl_use('GTK4Agg')  # Ensure we use a GUI backend
-# mpl_use('TkAgg')  # Ensure we use a GUI backend
-
 # Synchronization primitives for thread-safe data access and clean shutdown
 data_lock = threading.Lock()
 stop_event = threading.Event()
