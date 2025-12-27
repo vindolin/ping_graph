@@ -80,7 +80,8 @@ Replace `[host]` with the hostname or IP address you want to monitor (e.g., `goo
 * `-W`, `--timeout` (ms): **Threshold** for classifying a reply as “slow”.
   Used for **coloring** points on the graph and related stats.
   *Note: this does **not** change the OS ping timeout.*
-- `-i`, `--interval`: Interval between pings in seconds. Default is 0.1 second.
+* `-i`, `--interval`: Interval between pings in seconds. Default is 0.1 second.
+* `-M`, `--max_age`: Plot only pings that are newer than max_age seconds.
 * `-D`, `--dead_timeout` (ms): **Hard per-probe deadline.**
   The program enforces this both by passing an OS-specific per-reply timeout to `ping` **and** by killing the subprocess if it exceeds this deadline.
   Default: `500`. Range: `timeout` … `10000`.
